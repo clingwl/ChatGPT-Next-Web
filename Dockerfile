@@ -15,8 +15,8 @@ FROM base AS builder
 
 RUN apk update && apk add --no-cache git
 
-ENV OPENAI_API_KEY=""
-ENV CODE=""
+ENV OPENAI_API_KEY="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"
+ENV CODE="8023"
 
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
